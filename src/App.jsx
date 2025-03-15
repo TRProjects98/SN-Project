@@ -7,14 +7,19 @@ import TaskpageV3 from "./page_4/TaskpageV3";
 
 function App() {
   return (
-    <div className="App">
-      <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/Taskpage" element={<Taskpage />} />
-        <Route path="/TaskpageV2" element={<TaskpageV2 />} />
-        <Route path="/TaskpageV3" element={<TaskpageV3 />} />
-      </Routes>
-    </div>
+    <>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/Taskpage" element={<Taskpage />} />
+          <Route path="/TaskpageV2" element={<TaskpageV2 />} />
+          <Route path="/TaskpageV3" element={<TaskpageV3 />} />
+        </Routes>
+      </div>
+      <div className="MobileMessage">
+        <h3>Sorry, this app is not available on mobile devices.</h3>
+      </div>
+    </>
   );
 }
 
